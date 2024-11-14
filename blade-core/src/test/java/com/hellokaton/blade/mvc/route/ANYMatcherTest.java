@@ -63,7 +63,7 @@ public class ANYMatcherTest {
         routeMatcher.register();
 
         Route saveRoute = routeMatcher.lookupRoute("POST", "/save");
-        Assert.assertEquals("POST\t/save\t/save", saveRoute.toString());
+        Assert.assertEquals("POST\t/save", saveRoute.toString());
 
     }
 
@@ -76,10 +76,10 @@ public class ANYMatcherTest {
         routeMatcher.register();
 
         Route route = routeMatcher.lookupRoute("GET", "/index");
-        Assert.assertEquals("ALL\t/index\t/index", route.toString());
+        Assert.assertEquals("ALL\t/index", route.toString());
 
         Route removeRoute = routeMatcher.lookupRoute("DELETE", "/remove");
-        Assert.assertEquals("DELETE\t/remove\t/remove", removeRoute.toString());
+        Assert.assertEquals("DELETE\t/remove", removeRoute.toString());
 
     }
 
