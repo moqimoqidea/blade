@@ -31,7 +31,7 @@ public class ANYMatcherTest {
         routeMatcher.register();
 
         Route route = routeMatcher.lookupRoute("GET", "/");
-        Assert.assertEquals("GET\t/\t/", route.toString());
+        Assert.assertEquals("GET\t/", route.toString());
 
         List<Route> routes = routeMatcher.getBefore("/");
         Assert.assertEquals(1, routes.size());
