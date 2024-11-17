@@ -24,7 +24,7 @@ public class ANYBuilderTest {
 
         Route route = routeMatcher.lookupRoute("GET", "/");
         Assert.assertNotNull(route);
-        Assert.assertEquals("GET\t/\t/", route.toString());
+        Assert.assertEquals("GET\t/", route.toString());
     }
 
     @Path
