@@ -126,7 +126,7 @@ public class BladeTest extends BaseTestCase {
             options.addStatic("/assets/");
         });
 
-        assertEquals(7, blade.staticOptions().getPaths().size());
+        assertEquals(5, blade.staticOptions().getPaths().size());
         assertEquals(Boolean.TRUE, blade.staticOptions().getPaths().contains("/assets/"));
         assertEquals(Boolean.FALSE, blade.staticOptions().getPaths().contains("/hello/"));
     }
